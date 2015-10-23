@@ -158,8 +158,8 @@ foreign import ccall unsafe "curandSetGeneratorOffset"
   setGeneratorOffset :: Generator -> CULLong -> IO Status
 
 -- CuRANDOrdering.
-foreign import ccall unsafe "curandSetGeneratorCuRANDOrdering"
-  setGeneratorCuRANDOrdering :: Generator -> CuRANDOrdering -> IO Status
+foreign import ccall unsafe "curandSetGeneratorOrdering"
+  setGeneratorOrdering :: Generator -> CuRANDOrdering -> IO Status
 
 -- Dimensions.
 foreign import ccall unsafe "curandSetQuasiRandomGeneratorDimensions"
